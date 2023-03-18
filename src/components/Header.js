@@ -1,12 +1,11 @@
 import React from 'react';
 import { Text, StyleSheet, SafeAreaView } from 'react-native';
 
-
-const Header = () => {
+const Header = ({ nombre }) => {
     return ( 
         <SafeAreaView style={styles.containerHeader}>
             <Text style={styles.titleIndex}>Bienvenido de vuelta!</Text>
-            <Text>Ruben Rodriguez!</Text>
+            <Text>{ nombre }</Text>
         </SafeAreaView>
      );
 }
@@ -14,6 +13,7 @@ const Header = () => {
 const styles = StyleSheet.create({
     containerHeader: {
         paddingLeft: 20,
+        
         paddingRight: 20,
         marginBottom: 0,
     },

@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Puntos from '../components/Puntos';
 import Movimientos from '../components/Movimientos';
 import Header from '../components/Header';
 import FiltroMovimientos from '../components/FiltroMovimientos';
-import { SafeAreaView, StyleSheet, View, Text, Button } from 'react-native';
+import { SafeAreaView, StyleSheet, View, Text } from 'react-native';
 
 const HomeScreen = () => {
+    const [ nombre, guardarNombre ] = useState('Ruben Rodriguez!');
+
     return ( 
         <>
             <SafeAreaView>
                 <View style={styles.containerHeader}>
-                    <Header/>
+                    <Header nombre={ nombre }/>
                 </View>
                 <View style={styles.sectionViewTitle}>
                     <Text style={styles.sectionTitle}>TUS PUNTOS</Text>
