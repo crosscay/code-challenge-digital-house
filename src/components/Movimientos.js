@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from 'react';
-import { StyleSheet, FlatList, SafeAreaView  } from 'react-native'
+import { StyleSheet, FlatList, SafeAreaView, View  } from 'react-native'
 import  ProductosContext from '../context/productosContext';
 import ProductoItem from './ProductoItem';
 import _ from 'lodash';
@@ -16,15 +16,19 @@ const Movimientos = () => {
       <>
         <SafeAreaView style={styles.container}>
           <FlatList
+            ItemSeparatorComponent={() => {
+              return (<View style={{height: 8, backgroundColor: 'white'}} />);
+            }}
             data={movimientosfiltrados}
-            renderItem={({item}) => <ProductoItem 
-            createdAt={item.createdAt} 
-            product={item.product}
-            points={item.points} 
-            image={item.image} 
-            is_redemption={item.is_redemption}
-            id={item.id}
-             />}
+            renderItem={({item}) => 
+            <ProductoItem 
+              createdAt={item.createdAt} 
+              product={item.product}
+              points={item.points} 
+              image={item.image} 
+              is_redemption={item.is_redemption}
+              id={item.id}
+            />}
             keyExtractor={item => item.id}
           />
         </SafeAreaView>

@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import ProductosContext from '../context/productosContext';
-import _ from 'lodash';
 import {
     SafeAreaView,
     StyleSheet,
@@ -8,12 +7,13 @@ import {
     View
   } from 'react-native';
 import Card from './Card';
+import Meses from '../utilities/Meses';
 
 const Puntos = () => {
     // Context de Productos 
     const { puntosganados } = useContext(ProductosContext);
 
-    const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+    const meses = Meses;
     const date = new Date();
     const mes_name = date.getMonth();
 
