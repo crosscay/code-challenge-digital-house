@@ -26,7 +26,7 @@ const ProductDetail = ({ route }) => {
                     <View style={[styles.container, { flexDirection: 'column'}]}>
                         <View style={{flex: 2}}></View>
                         <View style={{flex: 1}}>
-                            <View style={{ flex: 1, alignSelf: 'stretch' }}>
+                            <View style={{ flex: 1, alignSelf: 'stretch', marginLeft: 10 }}>
                                 <Text style={styles.title}>{ product }</Text>
                             </View>
                         </View>
