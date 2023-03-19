@@ -1,9 +1,9 @@
 Aplicación en react native prueba tecnica Multiplica Talent.
 
 ### Sceenshot
-![pantalla_1](https://user-images.githubusercontent.com/15184739/226137048-3c2ddece-0b9f-4696-8c34-aab2c1938a39.png)
-![pantalla_2](https://user-images.githubusercontent.com/15184739/226137095-2a454105-5353-4be2-81c1-34e30af35197.png)
-![pantalla_3](https://user-images.githubusercontent.com/15184739/226137162-8ee5341c-ae4e-4589-b587-d7e1a1fb61ab.png)
+![pantalla_1](https://user-images.githubusercontent.com/15184739/226147151-2b90d563-7fa2-4825-81ee-ff68367ee491.png)
+![pantalla_2](https://user-images.githubusercontent.com/15184739/226147164-38680c12-ee39-4c3f-a7a8-2fb4e68889bd.png)
+![pantalla_3](https://user-images.githubusercontent.com/15184739/226147172-8fefa2ad-e12b-4a35-a68c-4fc4218e12ba.png)
 ![pantalla_4](https://user-images.githubusercontent.com/15184739/226136409-425bc4a7-9729-4a7b-903c-cebeb020fdb6.png)
 
 ### Cómo empezar
