@@ -3,44 +3,79 @@ import Puntos from '../components/Puntos';
 import Movimientos from '../components/Movimientos';
 import Header from '../components/Header';
 import FiltroMovimientos from '../components/FiltroMovimientos';
-import { SafeAreaView, StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
 const HomeScreen = () => {
     const [ nombre, guardarNombre ] = useState('Ruben Rodriguez!');
 
     return ( 
         <>
-            <SafeAreaView>
-                <View style={styles.containerHeader}>
-                    <Header nombre={ nombre }/>
+            <View style={[styles.container, { flexDirection: 'column', backgroundColor: '#F8F8F8'}]}>
+                <View style={{flex: 1}}>
+                    <View style={[styles.container, { flexDirection: 'column'}]}>
+                        <View style={{flex: 1}}></View>
+                        <View style={{flex: 1}}>
+                            <View style={{ flex: 1, alignSelf: 'stretch', marginLeft: 10 }}>
+                                <Header nombre={ nombre }/>
+                            </View>
+                        </View>
+                    </View>
                 </View>
-                <View style={styles.sectionViewTitle}>
-                    <Text style={styles.sectionTitle}>TUS PUNTOS</Text>
-                </View> 
-                <View style={styles.containerPoints}>
-                    <Puntos />
+                <View style={{flex: 2, alignItems: 'center', paddingBottom: 0, paddingTop:0}} >
+                    <View style={{ alignSelf: 'stretch', flexDirection: 'row' }}>
+                        <View style={{ flex: 2, alignSelf: 'stretch' }}>
+                            <View style={styles.sectionViewTitle}>
+                                <Text style={styles.sectionTitle}>TUS PUNTOS</Text>
+                            </View>
+                        </View>
+                        <View style={{ flex: 2, alignSelf: 'stretch' }}></View>
+                    </View>
+                    <View style={styles.containerPoints}>
+                        <Puntos />
+                    </View>
                 </View>
-                <View style={styles.sectionViewTitle}>
-                    <Text style={styles.sectionTitle}>TUS MOVIMIENTOS</Text>
+                <View style={{flex: 3}}>
+                    <View style={{ alignSelf: 'stretch', flexDirection: 'row' }}>
+                        <View style={{ flex: 2, alignSelf: 'stretch' }}>
+                            <View style={styles.sectionViewTitle}>
+                                <Text style={styles.sectionTitle}>TUS MOVIMIENTOS</Text>
+                            </View>
+                        </View>
+                        <View style={{ flex: 2, alignSelf: 'stretch' }}></View>
+                    </View>
+                    <View style={styles.containerMovements}>
+                        <Movimientos />   
+                    </View> 
                 </View>
-                <View style={styles.containerMovements}>
-                    <Movimientos />   
-                </View> 
-                <View >
-                    <FiltroMovimientos />
-                </View> 
-            </SafeAreaView> 
+                <View style={{flex: 1}}>
+                    <View style={[styles.container, { flexDirection: 'column'}]}>
+                        <View style={{flex: 1}}></View>
+                        <View style={{flex: 1}}>
+                            <View style={{ flex: 1, alignSelf: 'stretch', marginLeft: 20, marginRight: 20 }}>
+                                <FiltroMovimientos />
+                            </View>
+                        </View>
+                    </View>
+                </View>
+            </View>
         </> 
     );
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        paddingTop: 0,
+        paddingBottom: 0
+    },
     containerHeader: {
         marginTop:28,
         marginBottom: 10,
     },
     containerPoints: {
-        marginTop:15,
+        width: '100%',
+        height: '90%',
+        marginTop: 10,
         marginBottom: 0,
     },
     containerMovements: {
@@ -53,18 +88,16 @@ const styles = StyleSheet.create({
         marginRight: 20,
         marginBottom: 5,
     },
-    sectionButtonTodo: {
-    },
     sectionViewTitle: {
-        marginBottom: 5,
-        left: 20,
-        top: 10
+        paddingLeft: 15,
+        paddingRight: 15
     },
     sectionTitle: {
         color: '#9B9898',
         fontSize: 16,
         fontWeight: '800',
-    },
+        marginTop: 8
+    }
 });
  
 export default HomeScreen;

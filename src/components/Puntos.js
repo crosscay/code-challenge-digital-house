@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
       fontWeight: '800'
     },
     card: {
-      height: 130,
+      height: '95%',
       width: '100%',
       backgroundColor: '#334FFA',
       justifyContent: 'center', //Centered vertically

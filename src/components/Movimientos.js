@@ -38,7 +38,7 @@ const Movimientos = () => {
 
 const styles = StyleSheet.create({
   container: {
-    height: 300,
+    height: '100%',
     marginBottom: 8,
     marginLeft: 8,
     marginRight: 10
