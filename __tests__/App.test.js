@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Header from './src/components/Header';
-import Card from './src/components/Card';
+import Header from '../src/components/Header';
+import Card from '../src/components/Card';
 
 describe('<Header />', () => {
   it('has 1 child', () => {

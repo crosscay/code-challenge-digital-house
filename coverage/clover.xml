@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1679180050504" clover="3.2.0">
-  <project timestamp="1679180050504" name="All files">
+<coverage generated="1679363743163" clover="3.2.0">
+  <project timestamp="1679363743163" name="All files">
     <metrics statements="111" coveredstatements="6" conditionals="12" coveredconditionals="0" methods="32" coveredmethods="2" elements="155" coveredelements="8" complexity="0" loc="111" ncloc="111" packages="8" files="16" classes="16"/>
     <package name="code-challenge-digital-house">
       <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -166,7 +166,7 @@
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
       </file>
       <file name="ProductDetail.js" path="C:\Cursos\React\code-challenge-digital-house\src\views\ProductDetail.js">
         <metrics statements="13" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
